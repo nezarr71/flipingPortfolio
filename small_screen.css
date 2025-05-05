@@ -1,0 +1,63 @@
+/* mbile styles  */
+
+
+
+
+/* landing_page */
+
+a{
+    text-decoration: none;
+}
+
+
+#icon-1{
+	border-radius: 50%;
+	height:6em;
+	width:6em;
+    border:8px solid red;
+}
+
+/* styling.css */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+b{
+	font-size: 2em;
+    position: relative;
+    bottom: 6em;
+    right:3em;
+}
+
+.icon-2{
+	position: fixed;
+    top:0;
+    left:2rem;
+}
+
+.article{
+    position:fixed;
+    top: 0;
+}
+
+
+
+
+
+.icon-4{
+    position: relative;
+    top: 6em;
+    right:98px;
+}
+
+
+
+.icon-3{
+    position:relative;
+    top: 6em;
+    left:80px;
+}

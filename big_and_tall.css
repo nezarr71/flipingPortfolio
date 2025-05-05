@@ -1,0 +1,93 @@
+/* landing PC version css */
+
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    flex-direction: column;
+}
+
+
+
+
+#icon-1{
+	border-radius:50% ;
+	height:8em ;
+	width: 8em;
+	border: 8px solid red;
+}
+
+
+.article{
+    position:fixed;
+    top: 1rem; /* Adjusted to add spacing */
+    left:3rem;
+}
+
+
+.icon-2{
+	position: fixed;
+    top: 1rem; /* Adjusted to add spacing */
+    left:36rem;
+}
+
+
+.icon-3{
+	position: relative;
+	top:11rem;
+	right: 28rem;
+}
+
+
+.icon-4{
+	position: relative;
+	top: 11rem;
+	left: 9rem;
+}
+
+#sr-71{
+	position:relative;
+	bottom: 4rem;
+	right:21rem ;
+	font-size: 2rem;
+}
+
+
+
+a{
+	text-decoration: none;/* una Noble Batalla */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,176 @@
+/* NECESITY_survival_new-motorcycle_new-land */
+
+:root{
+	---umbra--shade:#212329;
+	--card-color:linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+	--bg-secondary:#3a3b3c;
+	/*dark-grey*/
+	--third-blanco:#fff;
+	line-height: 1.5;
+}
+/* css pseudo class  w/t higher specificity*/
+
+*{
+	box-sizing: border-box;
+	padding:0;
+	margin:0;
+}
+
+
+body{
+	height:100vh ;
+	overflow: auto;
+	background-color: var(---umbra--shade);
+
+}
+
+
+.container{
+	min-height: 600px;
+	padding-top: 100px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background:var(--card-color);
+	justify-content: center;
+}/* the mian-content of the site */
+
+
+
+.container .curve{
+	position: absolute;
+	width:100%;
+	height: 300px;/* alter this to expand conent */
+	bottom:0;
+}
+
+.container .curve:before{
+	content: "";
+	width: 55%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	border-radius: 100% 50%;
+	transform:translate(85%, 60%);
+	background-color: var(---umbra--shade);
+}
+
+
+.container .curve::after{
+	content: "";
+	width: 55%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	border-radius: 100% 50%;
+	background: var(--card-color);
+	transform: translate(-4%,40%);
+	z-index: -19;
+}
+/* spinning sideMenu */
+
+
+.genesis{
+	transform-origin:top left;
+	transition:transform 0.5s linear ;
+	width: 100vw;
+	min-height: 100vh;
+}
+
+.genesis .lakisa-menu{
+	transform: skewX(35deg);
+
+}
+
+
+
+.circle-container{
+	position: fixed;
+	top:-100px;
+	left: -100px;
+	z-index: 90;
+}
+
+.circle{
+	background-color: #1acb9c;
+	height:200px;
+	width: 200px;
+	border-radius: 50%;
+	position: relative;
+	transition: transform 0.5s linear;
+}
+
+
+.container.lakisa-menu .circle{
+	transform: rotate(-30deg);
+}
+
+
+.circle button{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	height: 100px;
+	background:transparent;
+	border:0;
+	
+}
+
+.circle button:focus{
+	outline: none;
+}
+
+
+.circle button#fongola{
+	left:65%;
+}
+
+.circle button#kanga{
+	right: 85%;
+	transform:translateX(-90%) rotate(90deg);
+	transform-origin: left;
+}
+
+.container.lakisa-menu + nav li{
+	transform: translateX(0);
+	transition-delay: 0.3s ease-in-out;
+}
+
+nav{
+	position: fixed;
+	bottom: 44rem;
+	left:53px;
+	opacity: 65%;
+}
+
+nav ul{
+	list-style-type:none ;
+
+}
+
+nav ul li{
+	text-transform: uppercase;
+	color:var(--third-blanco);
+	
+}
+
+/* about me section cards */
+
+.card{
+	text-align: center;
+	margin: 15px;
+	background-color: #fff;
+	width:18rem;
+	border-radius: 10%;
+	box-shadow: 8px 8px 5px ;
+}
+
+
+.font-5{
+	font-size: 15px;
+	font-family: cursive;
+}
+
+
+

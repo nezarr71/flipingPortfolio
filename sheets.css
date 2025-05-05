@@ -1,0 +1,182 @@
+/* biography site styles */
+
+*{
+	box-sizing: border-box;
+	padding:0;
+	margin:0;
+}
+
+
+.genesis{
+	transform-origin: top left;
+	transition: transform 0.5s linear;
+	width: 100vw;
+	min-height: 100vh;
+	
+}
+
+.genesis.lakisa-menu{
+	transform: rotate(-20deg);
+}
+
+.circle-container{
+	position: fixed;
+	top: -100px;
+	left: -100px;
+	z-index: 90;
+}
+
+.circle{
+	background-color:#1abc9c;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	position: relative;
+	transition: transform 0.5s linear;
+}
+
+.container.lakisa-menu .cirlce{
+	transform: rotate(-70deg);
+}
+
+.circle button{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 100px;
+	background:transparent;
+	border: 0;
+	font-size: 26px;
+	color: #fff;
+}
+
+.circle button:focus{
+	outline: none;
+}
+
+.circle button#fongola{
+	
+	top:50%;
+	left:65%;
+}
+
+
+.circle button#kanga{
+	transform:translateX(-50%)  rotate(90deg);
+	right: 35%;
+	transform-origin: left;
+}
+
+.genesis.lakisa-menu + nav li{
+	transform:translateX(0);
+	transition-delay: 0.3s;
+
+}
+
+nav{
+	position: fixed;
+	bottom:-15px;
+	left:49px;
+	opacity:60%;
+	z-index: 1;
+}
+
+nav ul{
+	list-style-type:none;
+	padding-left: 40px;
+}
+
+
+nav ul li{
+	color:#fff;
+	margin:40px 0;
+	transform:translateX(-100%);
+	transition: transform 0.4s ease-in;
+}
+
+nav ul li{
+	font-size: 20px;
+	margin-right: 3px;
+
+}
+
+ 
+
+/* FOOTER componet rulesets are here */
+body{
+	height:100vh;
+	background-color:#212329;
+	overflow: hidden;
+}
+
+.container{
+	min-height: 560px;
+	padding-top: 100px;	
+	position: realtive;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+
+.container .curve{
+	position: absolute;
+	height:300px;
+	width:100%;
+	bottom:0;
+
+}
+
+.container .curve::before{
+	content:"";
+	width: 50%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	border-radius: 100% 50%;
+	transform: translate(120%, 2%);
+	background-color: #212329;
+}
+
+
+.container .curve::after{
+	content:"";
+	width: 80%;
+	height:100%;
+	display: block;
+	position: absolute;
+	border-radius: 100% 50%;
+	background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+	/*this is how you manipulate the bubble ele */
+	transform: translate(-16%,-5%);	
+	z-index: -1;	
+
+}
+
+/* about me section cards */
+
+
+.card{
+	text-align: center;
+	margin:2rem;
+	background-color: #fff;
+	width:18rem;
+	border-radius: 10%;
+	box-shadow: 8px 8px 5px ;
+}
+
+#wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.font-5{
+	font-size: 18px;
+	font-family: cursive;
+}
+
+
+

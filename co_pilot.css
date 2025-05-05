@@ -1,0 +1,214 @@
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+
+nav ul{
+	list-style-type: none;
+	padding-left: 140px;
+    color:#fff;
+
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    background-color: #212329;
+
+}
+
+.container{
+    min-height: 570px;
+    padding-top: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    
+}
+
+
+
+.container .curve{
+    position: absolute;
+    height:250px;
+    width: 100%;
+    bottom:0;
+}
+
+.container .curve::before{
+    content:"";
+    width:55%;
+    height: 100%;
+    display:block;
+    position: absolute;
+    border-radius:100% 50%;
+    transform: translate(90%,30%);
+    background-color: #212329;
+
+
+}
+
+.container .curve::after{
+    content:"";
+    width:55%;  
+    height: 100%;
+    display:block;
+    position: absolute;
+    border-radius:100% 50%;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    transform: translate(-4%,40%);
+    z-index: -5;
+
+}
+/* footer elemetns */
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* sideMenu functionality */
+
+
+.genesis{
+    
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width:100vw;
+    min-height: 100vh;
+    
+}
+
+.genesis.lakisa-menu{
+    transform: rotate(-20deg);
+
+}
+
+.circle-container{
+    position: fixed;
+    top:-100px;
+    left:-100px;
+    z-index: 90;
+}
+
+
+.circle{
+    background:#1abc9c;
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+    
+}
+
+.container.lakisa-menu .circle{
+    transform: rotate(-70deg);
+
+}
+.circle button{
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    left:50%;
+    height:100px;
+    font-size: 26px;
+    background:transparent;
+    color:#fff;
+    border:none;
+}
+
+.circle button:focus{
+    outline: none;
+}
+.circle button#fongola{
+    left:60%;
+}
+
+.circle button#kanga{
+    right: 35%;
+    transform:translateX(-50%) rotate(90deg);
+    transform-origin:left;
+
+}
+
+.genesis.lakisa-menu + nav li{
+    transform:translateX(0);
+    transition-delay: 0.3s;
+}
+
+/* reposition nav choises */
+nav{
+    position: fixed;
+    bottom:40px;
+    left:0;
+    
+}
+
+nav ul li{
+    text-transform: uppercase;
+    margin: 40px 0;
+    transform:translate(-100%);
+    transition: transform 0.4s ease-in;
+    opacity: 60%;
+}
+
+
+nav ul li + li{
+    margin-left: 50px;
+    transform: translateX(-150%);
+
+}
+
+
+
+
+/* slidder scroller css */ 
+
+.gallery{
+    width: 1000px;
+    display: flex;
+    overflow-x: scroll;
+    
+}
+
+.gallery .sr-71{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:20px;
+    padding: 10px;
+    flex:none;
+}
+
+.gallery .sr-71 .a-1{
+   width: 100%; 
+   filter: grayscale(100%);
+   transition: transform 0.5s;
+
+}
+
+.gallery .sr-71 img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+
+
+
+
+
+
+
+
+/* note; depending on the wanted outcome, you must modify 
+eather the classes or the css rulesets in order for the css to target correcly */
+
+
