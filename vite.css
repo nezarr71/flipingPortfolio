@@ -184,8 +184,18 @@ nav ul li{
 	display: none;
 }
 
+.gallery-wrap{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10% auto;
 
+}
 
-
+#nextBtn, #backBtn{
+	height:3rem ;
+	width: 3rem;
+	margin:4px;
+}
 
 

@@ -20,9 +20,37 @@ fongola.addEventListener('click', ()=> container.classList.add('lakisa-menu'));
 kanga.addEventListener('click', ()=> container.classList.remove('lakisa-menu'));
 
 
+///scroll menu
+
+let scrollContainer = document.querySelector(".gallery");  
+
+let backBtn = document.getElementById("backBtn");
+
+let nextBtn = document.getElementById("nextBtn");
 
 
 
+scrollContainer.addEventListener("wheel", (evt) => {
+	evt.preventDefault();
+	scrollContainer.scrollLeft += evt.deltaY;
+
+});
+
+
+nextBtn.addEventListener("click", ()=>{
+	scrollContainer.style.scrollBehavior = "smooth";
+	scrollContainer.scrollLeft += 900;
+
+
+})
+
+
+backBtn.addEventListener("click", ()=>{
+	scrollContainer.style.scrollBehavior = "smooth";
+	scrollContainer.scrollLeft -= 900;
+
+
+})
 
 
 

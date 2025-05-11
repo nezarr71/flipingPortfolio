@@ -35,7 +35,7 @@ body{
 
 .container .curve{
     position: absolute;
-    height:250px;
+    height:198px;
     width: 100%;
     bottom:0;
 }
@@ -169,6 +169,9 @@ nav ul li + li{
 
 
 /* slidder scroller css */ 
+.gallery::-webkit-scrollbar{
+    display: none;
+}
 
 .gallery{
     width: 1000px;
@@ -202,9 +205,21 @@ nav ul li + li{
 
 
 
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:10% auto;
+}
 
 
+#backBtn, #nextBtn{
+    height:28px ;
+    width: 28px;
+    cursor: pointer;
+    margin: 40px;
 
+}
 
 
 
