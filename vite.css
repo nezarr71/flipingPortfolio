@@ -193,9 +193,10 @@ nav ul li{
 }
 
 #nextBtn, #backBtn{
+	z-index: 9;
 	height:3rem ;
 	width: 3rem;
-	margin:4px;
+	margin:6px;
 }
 
 

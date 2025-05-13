@@ -214,8 +214,8 @@ nav ul li + li{
 
 
 #backBtn, #nextBtn{
-    height:28px ;
-    width: 28px;
+    height:3rem ;
+    width: 3rem;
     cursor: pointer;
     margin: 40px;
 
