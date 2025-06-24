@@ -1,8 +1,6 @@
 /* Expirince page JS codesurce */
 
 
-
-console.log('portfolio.js loaded');
 const fongola = document.getElementById('fongola');
 
 const kanga = document.getElementById('kanga');
@@ -51,6 +49,7 @@ backBtn.addEventListener("click", ()=>{
 
 
 })
+
 
 
 

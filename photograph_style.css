@@ -172,5 +172,38 @@ nav ul li{
 	font-family: cursive;
 }
 
+/* SECOND part of mobile EX */
+
+
+.sr-71{
+	height: 20em;
+	width: 20em;
+	border-radius: 18%;
+
+}
+
+.struct{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background:orange;
+}
+
+.font-a{
+	color:violet;
+	background-color:yellow ;
+	font-size: 2em;
+	border-radius: 10%;
+}
+
+.canes-03{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
 
 
